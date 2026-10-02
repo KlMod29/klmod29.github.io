@@ -3,12 +3,163 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Klub Modelarski SP29 Gdynia</title>
+    <meta name="description" content="Szkolny Klub Modelarski SP29 Gdynia — modele RC, FreeCAD, druk 3D, PCB i więcej.">
+    <title>Szkolny Klub Modelarski SP29 Gdynia</title>
+    <link rel="icon" href="KlMod29_S.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <h1>Klub Modelarski SP29 Gdynia</h1>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="#wiesci">
+                <img src="KlMod29_M.jpeg" alt="Logo Szkolnego Klubu Modelarskiego SP29 Gdynia" width="180" height="180">
+                <div class="brand-text">
+                    <p class="brand-name">Szkolny Klub Modelarski</p>
+                    <p class="brand-school">SP29 Gdynia</p>
+                </div>
+            </a>
+            <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Główne">
+                <ul>
+                    <li><a href="#wiesci" data-tab="wiesci">Wieści</a></li>
+                    <li><a href="#o-nas" data-tab="o-nas">O nas</a></li>
+                    <li><a href="#projekty" data-tab="projekty">Projekty</a></li>
+                    <li><a href="#dolacz" data-tab="dolacz">Dołącz do nas</a></li>
+                    <li><a href="#zasady" data-tab="zasady">Zasady</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <p>Strona szkolnego klubu modelarskiego.</p>
+    <main>
+        <section id="wiesci" class="tab-panel" hidden>
+            <h1>Wieści</h1>
+            <p class="lead">Co słychać w klubie — krótkie informacje dla uczniów i rodziców.</p>
+
+            <article class="news-item">
+                <time datetime="2026-09-15">15 września 2026</time>
+                <h2>Start sezonu 2026/2027</h2>
+                <p>Witamy w nowym roku szkolnym! Pierwsze spotkania to zapoznanie z warsztatem, zasadami bezpieczeństwa oraz planem projektów — od modeli RC po druk 3D i elektronikę.</p>
+            </article>
+
+            <article class="news-item">
+                <time datetime="2026-10-01">1 października 2026</time>
+                <h2>Pierwsze loty modeli RC</h2>
+                <p>Na boisku szkolnym (przy sprzyjającej pogodzie) ćwiczymy starty i lądowania samolotów zdalnie sterowanych. Opiekunowie pilnują bezpiecznej strefy lotów.</p>
+            </article>
+
+            <article class="news-item">
+                <time datetime="2026-10-20">20 października 2026</time>
+                <h2>Warsztat: pierwsza płytka PCB</h2>
+                <p>Uczymy się projektować prosty układ elektroniczny i przygotowywać płytkę drukowaną. Następny krok — lutowanie pod okiem prowadzącego.</p>
+            </article>
+        </section>
+
+        <section id="o-nas" class="tab-panel" hidden>
+            <h1>O nas</h1>
+            <p class="lead">Jesteśmy szkolnym klubem modelarskim przy Szkole Podstawowej nr 29 w Gdyni.</p>
+            <p>Spotykamy się, żeby budować, projektować i testować — wszystko „na żywo”, z narzędziami i pod opieką prowadzących. W klubie pracujemy m.in. z:</p>
+            <ul class="activity-list">
+                <li>samolotami i pojazdami zdalnie sterowanymi (RC),</li>
+                <li>projektowaniem w FreeCAD,</li>
+                <li>drukiem 3D,</li>
+                <li>płytkami PCB i elektroniką,</li>
+                <li>pomiarami na oscyloskopie,</li>
+                <li>podstawami pneumatyki.</li>
+            </ul>
+            <p>Chcemy łączyć zabawę z nauką techniki — od pomysłu, przez projekt, aż po gotowy model.</p>
+
+            <h2>Prezentacja dla rodziców</h2>
+            <p>Poniżej znajdziesz prezentację o klubie. Możesz też <a href="prezentacja.pdf" download>pobrać plik PDF</a>.</p>
+            <div class="pdf-wrap">
+                <iframe
+                    title="Prezentacja dla rodziców — Szkolny Klub Modelarski SP29"
+                    src="prezentacja.pdf"
+                    class="pdf-frame"
+                ></iframe>
+                <p class="pdf-fallback">Jeśli prezentacja się nie wyświetla, <a href="prezentacja.pdf">otwórz lub pobierz prezentacja.pdf</a>. Plik powinien leżeć w katalogu głównym strony obok logo.</p>
+            </div>
+        </section>
+
+        <section id="projekty" class="tab-panel" hidden>
+            <h1>Projekty</h1>
+            <p class="lead">Nad czym pracujemy w klubie — od modeli latających po elektronikę i warsztat.</p>
+
+            <ul class="project-list">
+                <li>
+                    <h2>Samoloty RC</h2>
+                    <p>Budowa i regulacja modeli samolotów zdalnie sterowanych, ćwiczenia lotów i bezpieczna obsługa nadajnika.</p>
+                </li>
+                <li>
+                    <h2>Pojazdy RC</h2>
+                    <p>Samochody i inne pojazdy zdalnie sterowane — mechanika, napęd, sterowanie i testy na torze szkolnym.</p>
+                </li>
+                <li>
+                    <h2>Płytki PCB</h2>
+                    <p>Projektowanie prostych układów, przygotowanie płytek drukowanych i lutowanie pod nadzorem.</p>
+                </li>
+                <li>
+                    <h2>FreeCAD</h2>
+                    <p>Modelowanie 3D części i obudów — od szkicu do pliku gotowego do druku.</p>
+                </li>
+                <li>
+                    <h2>Druk 3D</h2>
+                    <p>Przygotowanie wydruków, ustawienia drukarki i montaż wydrukowanych elementów w modelach.</p>
+                </li>
+                <li>
+                    <h2>Oscyloskop i pomiary</h2>
+                    <p>Podstawy pomiarów sygnałów elektrycznych — jak „zobaczyć” napięcie i sprawdzić układ.</p>
+                </li>
+                <li>
+                    <h2>Pneumatyka</h2>
+                    <p>Proste układy powietrzne: tłoki, zawory i bezpieczna praca ze sprężonym powietrzem.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="dolacz" class="tab-panel" hidden>
+            <h1>Dołącz do nas</h1>
+            <p class="lead">Klub jest dla uczniów SP29 Gdynia, którzy lubią budować, majsterkować i uczyć się techniki.</p>
+            <h2>Dla kogo?</h2>
+            <ul>
+                <li>uczniowie szkoły podstawowej SP29,</li>
+                <li>chętni do pracy w grupie i dbania o wspólny warsztat,</li>
+                <li>zgodą rodzica/opiekuna na udział w zajęciach.</li>
+            </ul>
+            <h2>Jak się zgłosić?</h2>
+            <ol>
+                <li>Porozmawiaj z wychowawcą lub opiekunem klubu.</li>
+                <li>Przyjdź na pierwsze spotkanie informacyjne (termin podamy w Wieściach).</li>
+                <li>Oddaj podpisane zgłoszenie / zgodę rodzica (szczegóły u opiekuna).</li>
+            </ol>
+            <p class="contact-note">Kontakt: przez sekretariat szkoły lub opiekuna klubu — dokładny adres e-mail i godziny zajęć uzupełnimy wkrótce.</p>
+        </section>
+
+        <section id="zasady" class="tab-panel" hidden>
+            <h1>Zasady</h1>
+            <p class="lead">Warsztat to wspólna przestrzeń. Dzięki zasadom wszyscy mogą bezpiecznie tworzyć i uczyć się.</p>
+            <ol class="rules-list">
+                <li><strong>Bezpieczeństwo przede wszystkim.</strong> Narzędzia i urządzenia włączamy tylko za zgodą prowadzącego i według instrukcji.</li>
+                <li><strong>Szacunek do kolegów i sprzętu.</strong> Nie przeszkadzamy innym, nie niszczymy modeli ani narzędzi.</li>
+                <li><strong>Porządek na stanowisku.</strong> Po zajęciach sprzątamy stół, odkładamy narzędzia i zostawiamy miejsce gotowe dla następnych.</li>
+                <li><strong>Loty i testy tylko w wyznaczonej strefie.</strong> Modele RC uruchamiamy pod opieką prowadzącego, z dala od okien i przechodniów.</li>
+                <li><strong>Elektronika i lutowanie pod nadzorem.</strong> Lutownica, zasilacze i oscyloskop — wyłącznie z prowadzącym.</li>
+                <li><strong>Zgoda rodziców.</strong> Udział w klubie wymaga zgody rodzica lub opiekuna prawnego.</li>
+                <li><strong>Uczciwość i odpowiedzialność.</strong> O zniszczeniach lub problemach mówimy od razu — razem łatwiej naprawić.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Szkolny Klub Modelarski SP29 Gdynia</p>
+        <p><a href="https://klmod29.github.io/">klmod29.github.io</a></p>
+    </footer>
+
+    <script src="js/nav.js"></script>
 </body>
 </html>
